@@ -42,7 +42,10 @@ export default function App() {
     formData.append("length", captionLength);
 
     try {
-      const response = await axios.post("http://localhost:5000/generate_caption", formData);
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_URL}/generate_caption`,
+        formData
+      );
       const captions = response.data.captions;
 
       if (Array.isArray(captions) && captions.length > 0) {
