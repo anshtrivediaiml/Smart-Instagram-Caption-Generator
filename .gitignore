@@ -14,8 +14,9 @@ Thumbs.db
 
 # Unwanted
 #/
-# Ignore everything inside uploads/
+# Ignore all files in uploads folder
 backend/uploads/*
 
-# But keep the folder itself
+# Except .gitkeep file
 !backend/uploads/.gitkeep
+
