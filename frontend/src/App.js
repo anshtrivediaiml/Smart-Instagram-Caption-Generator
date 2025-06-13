@@ -90,7 +90,7 @@ export default function App() {
       <Toaster />
       <div className="card">
         <div className="title-row">
-          <h1>Insta Caption Generator</h1>
+          <h1>Instagram Caption Generator</h1>
           <button onClick={toggleTheme} className="theme-toggle">
             {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
           </button>
